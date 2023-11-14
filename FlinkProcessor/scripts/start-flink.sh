@@ -1,0 +1,1 @@
+/home/annis/flink/bin/flink run /home/annis/Documents/projects/FlinkProcessor/out/artifacts/FlinkProcessor_jar/FlinkProcessor.jar

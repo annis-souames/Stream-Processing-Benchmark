@@ -1,0 +1,74 @@
+23/04/30 19:25:53 WARN Utils: Your hostname, annis-IdeaPad-5-14ARE05 resolves to a loopback address: 127.0.1.1; using 192.168.0.19 instead (on interface wlo1)
+23/04/30 19:25:53 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+23/04/30 19:25:53 INFO SparkContext: Running Spark version 3.4.0
+23/04/30 19:25:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/04/30 19:25:53 INFO ResourceUtils: ==============================================================
+23/04/30 19:25:53 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/04/30 19:25:53 INFO ResourceUtils: ==============================================================
+23/04/30 19:25:53 INFO SparkContext: Submitted application: StructuredStreamingExample
+23/04/30 19:25:53 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/04/30 19:25:54 INFO ResourceProfile: Limiting resource is cpu
+23/04/30 19:25:54 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/04/30 19:25:54 INFO SecurityManager: Changing view acls to: annis
+23/04/30 19:25:54 INFO SecurityManager: Changing modify acls to: annis
+23/04/30 19:25:54 INFO SecurityManager: Changing view acls groups to:
+23/04/30 19:25:54 INFO SecurityManager: Changing modify acls groups to:
+23/04/30 19:25:54 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: annis; groups with view permissions: EMPTY; users with modify permissions: annis; groups with modify permissions: EMPTY
+23/04/30 19:25:54 INFO Utils: Successfully started service 'sparkDriver' on port 46743.
+23/04/30 19:25:54 INFO SparkEnv: Registering MapOutputTracker
+23/04/30 19:25:54 INFO SparkEnv: Registering BlockManagerMaster
+23/04/30 19:25:54 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/04/30 19:25:54 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/04/30 19:25:54 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/04/30 19:25:54 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-56735cc3-90d0-4f4d-9980-d8523e346aed
+23/04/30 19:25:54 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/04/30 19:25:54 INFO SparkEnv: Registering OutputCommitCoordinator
+23/04/30 19:25:54 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+23/04/30 19:25:54 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/04/30 19:25:54 INFO SparkContext: Added JAR file:/home/annis/Documents/projects/SparkProcessor/out/artifacts/SparkProcessor_jar/SparkProcessor.jar at spark://192.168.0.19:46743/jars/SparkProcessor.jar with timestamp 1682879153811
+23/04/30 19:25:54 INFO Executor: Starting executor ID driver on host 192.168.0.19
+23/04/30 19:25:54 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+23/04/30 19:25:54 INFO Executor: Fetching spark://192.168.0.19:46743/jars/SparkProcessor.jar with timestamp 1682879153811
+23/04/30 19:25:54 INFO TransportClientFactory: Successfully created connection to /192.168.0.19:46743 after 44 ms (0 ms spent in bootstraps)
+23/04/30 19:25:54 INFO Utils: Fetching spark://192.168.0.19:46743/jars/SparkProcessor.jar to /tmp/spark-01b2d93b-dbd9-4d31-836e-5329e9202b19/userFiles-bbf2bcde-f833-4337-a2d7-18d0d3d3c9b5/fetchFileTemp15910500149549315772.tmp
+23/04/30 19:25:58 INFO Executor: Adding file:/tmp/spark-01b2d93b-dbd9-4d31-836e-5329e9202b19/userFiles-bbf2bcde-f833-4337-a2d7-18d0d3d3c9b5/SparkProcessor.jar to class loader
+23/04/30 19:25:58 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42825.
+23/04/30 19:25:58 INFO NettyBlockTransferService: Server created on 192.168.0.19:42825
+23/04/30 19:25:58 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/04/30 19:25:58 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.0.19, 42825, None)
+23/04/30 19:25:58 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.0.19:42825 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.0.19, 42825, None)
+23/04/30 19:25:58 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.0.19, 42825, None)
+23/04/30 19:25:58 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.0.19, 42825, None)
+23/04/30 19:25:58 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/04/30 19:25:58 INFO SharedState: Warehouse path is 'file:/home/annis/Documents/projects/SparkProcessor/scripts/spark-warehouse'.
+23/04/30 19:26:01 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+23/04/30 19:26:01 INFO ResolveWriteToStream: Checkpoint root /tmp/kafka-structured-streaming-example resolved to file:/tmp/kafka-structured-streaming-example.
+23/04/30 19:26:01 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+23/04/30 19:26:01 INFO MicroBatchExecution: Starting [id = a6d4bcbc-323a-48e6-b5b6-983d56d1864e, runId = c6d4d727-719e-4999-bc69-a057d58b0b84]. Use file:/tmp/kafka-structured-streaming-example to store the query checkpoint.
+23/04/30 19:26:01 INFO MicroBatchExecution: Reading table [org.apache.spark.sql.kafka010.KafkaSourceProvider$KafkaTable@38573935] from DataSourceV2 named 'kafka' [org.apache.spark.sql.kafka010.KafkaSourceProvider@4049fcc1]
+23/04/30 19:26:01 INFO OffsetSeqLog: BatchIds found from listing: 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320
+23/04/30 19:26:01 INFO OffsetSeqLog: Getting latest batch 320
+23/04/30 19:26:01 INFO OffsetSeqLog: BatchIds found from listing: 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320
+23/04/30 19:26:01 INFO OffsetSeqLog: Getting latest batch 320
+23/04/30 19:26:01 INFO CommitLog: BatchIds found from listing: 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319
+23/04/30 19:26:01 INFO CommitLog: Getting latest batch 319
+23/04/30 19:26:01 INFO MicroBatchExecution: Resuming at batch 320 with committed offsets {KafkaV2[Subscribe[orders-a]]: {"orders-a":{"2":43664305,"1":0,"0":0}}} and available offsets {KafkaV2[Subscribe[orders-a]]: {"orders-a":{"2":375024305,"1":0,"0":0}}}
+23/04/30 19:26:01 INFO MicroBatchExecution: Stream started from {KafkaV2[Subscribe[orders-a]]: {"orders-a":{"2":43664305,"1":0,"0":0}}}
+23/04/30 19:26:01 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+23/04/30 19:26:02 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+23/04/30 19:26:02 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+23/04/30 19:26:02 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+23/04/30 19:26:02 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+23/04/30 19:26:02 INFO KafkaOffsetReaderAdmin: Partitions added: Map()
+^C23/04/30 19:26:02 INFO SparkContext: Invoking stop() from shutdown hook
+23/04/30 19:26:02 INFO SparkContext: SparkContext is stopping with exitCode 0.
+23/04/30 19:26:02 INFO SparkUI: Stopped Spark web UI at http://192.168.0.19:4040
+23/04/30 19:26:02 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/04/30 19:26:02 INFO MemoryStore: MemoryStore cleared
+23/04/30 19:26:02 INFO BlockManager: BlockManager stopped
+23/04/30 19:26:02 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/04/30 19:26:02 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/04/30 19:26:02 INFO SparkContext: Successfully stopped SparkContext
+23/04/30 19:26:02 INFO ShutdownHookManager: Shutdown hook called
+23/04/30 19:26:02 INFO ShutdownHookManager: Deleting directory /tmp/spark-01b2d93b-dbd9-4d31-836e-5329e9202b19
+23/04/30 19:26:02 INFO ShutdownHookManager: Deleting directory /tmp/spark-f9417568-93e9-4fd0-8aa2-1c91ad50b507

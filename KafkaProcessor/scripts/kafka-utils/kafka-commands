@@ -1,0 +1,15 @@
+To create a topic with replication factor of 1 and 3 partitions :
+~/kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3 --topic orders-input
+
+
+
+To run scaphandre
+sudo docker run -v /sys/class/powercap:/sys/class/powercap -v /proc:/proc -ti hubblo/scaphandre stdout -t 15
+
+To run jconsole (to get MBeans and Programs PID)
+
+~/.jdks/corretto-17.0.6/bin/jconsole
+
+To run FlinkProcessor :
+ cd flink
+ ./bin/flink run /home/annis/Documents/projects/FlinkProcessor/out/artifacts/FlinkProcessor_jar/FlinkProcessor.jar
