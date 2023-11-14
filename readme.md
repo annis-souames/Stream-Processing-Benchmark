@@ -11,6 +11,6 @@ We used JMX to collect the performance metrics and we stored them in Prometheus,
 
 ## Results
 
-We used JMX to collect the performance metrics and we stored them in Prometheus 
+Below are example of results for Kafka Streams with Grafana.
 
 ![alt text for screen readers](docs/kafka_streams_grafana.png "Example of results for Kafka Streams")
