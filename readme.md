@@ -1,4 +1,4 @@
-# stream-processing-bench
+# Stream Processing Benchmark
 A benchmark of performances between three different stream processors: Kafka Streams, Apache Flink and Spark Streaming.
 
 ## Technologies:
